@@ -26,11 +26,13 @@ else:
 
 
 
-user = int(input("type your:"))
+age = int(input("type your age: "))
 
-if user < 13:
+if age < 0:
+    print("age cannot be negative")
+elif age < 13:
     print("child")
-elif user < 17:
+elif age < 18:
     print("teenager")
 else:
     print("adult")
